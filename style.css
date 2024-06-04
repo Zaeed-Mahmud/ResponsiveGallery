@@ -1,0 +1,185 @@
+body{
+    background-color: rgb(6, 45, 111);
+}
+
+
+header{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+main{
+    padding: 30px;
+}
+
+#grid{
+ 
+    display: grid;
+    justify-content: center;
+    color:rgb(253, 253, 253);
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    font-size: 40px;
+    gap: 20px;
+}
+
+.grid_item{
+    border: 2px solid rgba(255, 255, 255, 0.761);
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(190deg, rgb(42, 42, 42),rgb(146, 146, 146));
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: transform 0.2s ease;    
+
+}
+
+.grid_item img{
+    background-size: cover;
+}
+
+.grid_item:hover{
+    transform: scale(1.10);
+    color:rgb(0, 234, 168);
+
+}
+
+
+.grid_item:nth-child(2){
+    background-image: url(img/2.jpeg);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+.grid_item:nth-child(3){
+    background-image: url(img/3.gif);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+.grid_item:nth-child(4){
+    background-image: url(img/4.jpeg);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+.grid_item:nth-child(5){
+    background-image: url(img/5.jpeg);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+.grid_item:nth-child(6){
+    background-image: url(img/6.webp);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+.grid_item:nth-child(7){
+    background-image: url(img/7.jpg);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+
+.grid_item:nth-child(9){
+    background-image: url(img/11.jpg);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+.grid_item:nth-child(10){
+    background-image: url(img/10.avif);
+    background-size: cover; /* <-- background size */
+    background-position: center  
+}
+
+
+.grid_item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+    color: rgb(0, 234, 168);
+    font-size: 50px;
+    padding-top: 40%;
+
+
+    background-image: url(img/1.gif);
+    background-size: cover; /* <-- background size */
+    background-position: center    
+}
+
+
+.grid_item:nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 2;
+    color: rgb(0, 234, 168);
+    font-size: 50px;
+    padding-top: 40%;
+        
+    background-image: url(img/8.gif);
+    background-size: cover; /* <-- background size */
+    background-position: center    
+}
+
+
+@media only screen and (max-width: 700px) {
+    #grid{
+        display: grid;
+        justify-content: center;
+        color:rgb(253, 253, 253);
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px;
+        font-size: 40px;
+        gap: 20px;
+    }
+    
+
+}
+
+
+    @media only screen and (max-width: 550px) {
+        #grid{
+            display: grid;
+            justify-content: center;
+            color:rgb(253, 253, 253);
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 150px 150px;
+            font-size: 40px;
+            gap: 20px;
+        }
+        
+    }
+
+
+    @media only screen and (min-width: 1200px) {
+        #grid{
+         
+            display: grid;
+            justify-content: center;
+            color:rgb(253, 253, 253);
+            grid-template-columns: 150px 150px 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px 150px 150px;
+            font-size: 40px;
+            gap: 20px;
+        }
+
+        .grid_item:nth-child(6) {
+            grid-column: span 2;
+            grid-row: span 2;
+            color: rgb(0, 234, 168);
+            font-size: 50px;
+            padding-top: 40%;
+        }
+
+        .grid_item:nth-child(10) {
+            grid-column: span 2;
+            grid-row: span 1;
+            color: rgb(0, 234, 168);
+        }
+
+    }
